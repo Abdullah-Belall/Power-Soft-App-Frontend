@@ -13,7 +13,7 @@ export default function CustomerOrdersTableRow({
   data: CustomerOrderInterface;
 }) {
   const [isCollapsed, setIsCollapsed] = useState(true);
-  const { id, curr_status, company_name, company_phone, details, status, created_at } = data;
+  const { id, curr_status, company_name, company_phone, details, created_at } = data;
   const router = useRouter();
 
   return (

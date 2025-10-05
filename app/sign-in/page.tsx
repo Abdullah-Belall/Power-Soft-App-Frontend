@@ -4,7 +4,7 @@ import MyInput from "../components/common/my-input";
 import MyButton from "../components/common/my-button";
 import { LogIn } from "lucide-react";
 import { useSnackBar } from "../utils/contexts/snackebar-context";
-import { CLIENT_COLLECTOR_REQ, SIGN_IN_REQ } from "../utils/requests/main-requests";
+import { SIGN_IN_REQ } from "../utils/requests/main-requests";
 import { useRouter } from "next/navigation";
 
 export default function SignIn() {

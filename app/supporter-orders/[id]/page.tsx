@@ -3,7 +3,7 @@ import MyButton from "@/app/components/common/my-button";
 import MyInput from "@/app/components/common/my-input";
 import MyTextArea from "@/app/components/common/my-text-area";
 import SelectList from "@/app/components/common/select-list";
-import { formatDate, GetOrderStatusUi, privStatusOptions, statusOptions } from "@/app/utils/base";
+import { formatDate, privStatusOptions, statusOptions } from "@/app/utils/base";
 import { useSnackBar } from "@/app/utils/contexts/snackebar-context";
 import { CLIENT_COLLECTOR_REQ } from "@/app/utils/requests/main-requests";
 import {

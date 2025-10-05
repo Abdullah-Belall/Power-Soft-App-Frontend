@@ -1,11 +1,7 @@
 "use client";
 import { LayoutDashboard } from "lucide-react";
-import MyInput from "../components/common/my-input";
 import { useEffect, useState } from "react";
-import SupporterOrdersTable from "../components/tables/supporter-orders-table/table";
-import { SupporterOrderInterface } from "../utils/types/supporter.interface";
 import { CLIENT_COLLECTOR_REQ } from "../utils/requests/main-requests";
-import { GET_SUPPORTER_ORDERS_REQ } from "../utils/requests/supporters";
 import { useRouter } from "next/navigation";
 import { TextField } from "@mui/material";
 import SelectList from "../components/common/select-list";
@@ -89,7 +85,7 @@ export default function SupporterOrdersPage() {
           </SelectList>
         </div>
         <div className="mt-[10px] flex flex-col gap-1">
-          <ManagerOrdersTable data={data.orders} />
+          <ManagerOrdersTable data={data.orders} nowFor={"all"} />
         </div>
         {data.total === 0 ? (
           <p className="px-5 italic py-2 bg-light w-fit mx-auto mt-2 rounded-md">No Data</p>

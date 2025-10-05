@@ -25,7 +25,7 @@ const Msg = ({ msg, type }: { msg: string; type: "success" | "error" }) => {
 };
 
 export default function CustomSnackbar() {
-  const { isOpen, data, openSnackBar, closeSnackBar } = useSnackBar();
+  const { isOpen, data, closeSnackBar } = useSnackBar();
   return (
     <Snackbar
       open={isOpen}

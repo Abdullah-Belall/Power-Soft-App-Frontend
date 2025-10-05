@@ -4,7 +4,6 @@ import { useRef } from "react";
 export default function MainTable({
   children,
   headers,
-  isPopup,
 }: {
   headers: string[];
   children: React.ReactNode;
